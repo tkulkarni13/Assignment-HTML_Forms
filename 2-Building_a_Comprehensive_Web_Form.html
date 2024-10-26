@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Building a Comprehensive Web Form</title>
+    </head>
+    <body>
+        <h1>Building a Comprehensive Web Form</h1>
+
+        <form action="/submit" method="post">
+            <!--Task 1: Creating a Selection Experience-->
+            <fieldset>
+                <legend>Pick a Favorite Language</legend>
+
+                <label for="fav_lang">Favorite Programming Language:</label>
+                <select name="fav_lang" id="fav_lang" required>
+                    <option value="html">HTML</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="sql">SQL</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Pick a Level of Programming Expertise</legend>
+
+                <label for="beginner">Beginner:</label>
+                <input type="radio" id="beginner" name="expertise" value="beginner" required>
+                
+                <label for="intermediate">Intermediate:</label>
+                <input type="radio" id="intermediate" name="expertise" value="intermediate" required>
+
+                <label for="advanced">Advanced:</label>
+                <input type="radio" id="advanced" name="expertise" value="advanced" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Pick Preferred Development Platforms</legend>
+
+                <label for="web">Web:</label>
+                <input type="checkbox" id="web" name="dev_platform" value="web">
+                
+                <label for="mobile">Moblie:</label>
+                <input type="checkbox" id="mobile" name="dev_platform" value="mobile">
+
+                <label for="desktop">Desktop:</label>
+                <input type="checkbox" id="desktop" name="dev_platform" value="desktop">
+            </fieldset>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </body>
+</html>
